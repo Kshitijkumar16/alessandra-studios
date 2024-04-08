@@ -11,6 +11,8 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
+  margin: 0;
+  padding: 0;
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;

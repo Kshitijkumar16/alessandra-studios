@@ -1,5 +1,5 @@
 "use client";
-import Nav from "@/components/ui/Nav";
+import Nav from "@/components/ui/nav";
 import { useMenu } from "@/hooks/useMenu";
 import { AnimatePresence } from "framer-motion";
 

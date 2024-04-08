@@ -1,17 +1,12 @@
-import { Inter } from "next/font/google";
-import localFont from "next/font/local";
+import { Noto_Sans_Display } from "next/font/google";
+import { Noto_Serif_Display } from "next/font/google";
 
-export const inter = Inter({
+export const serif = Noto_Serif_Display({
 	subsets: ["latin"],
 	style: ["normal"],
 });
 
-export const branch = localFont({
-	src: [{ path: "../public/fonts/Branch.ttf", weight: "400", style: "normal" }],
-	variable: "--font-branch",
-});
-
-export const angela = localFont({
-	src: [{ path: "../public/fonts/Angela.otf", weight: "400", style: "normal" }],
-	variable: "--font-branch",
+export const sans = Noto_Sans_Display({
+	subsets: ["latin"],
+	style: ["normal"],
 });

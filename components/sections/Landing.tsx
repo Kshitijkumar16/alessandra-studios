@@ -1,8 +1,7 @@
-import React from 'react'
 
 const Landing = () => {
   return (
-    <div>Landing</div>
+    <div className="h-screen bg-black">Landing</div>
   )
 }
 
