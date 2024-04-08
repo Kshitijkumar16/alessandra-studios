@@ -8,10 +8,10 @@ function LenisSmoothScroll({ children }: { children: React.ReactNode }) {
 			options={{
 				duration: 1.2,
 				easing: (t: number) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
-				direction: "vertical",
-				gestureDirection: "vertical",
-				smooth: true,
-				smoothTouch: false,
+				orientation: "vertical",
+				gestureOrientation: "vertical",
+				smoothWheel: true,
+				syncTouch: false,
 				touchMultiplier: 1.5,
 			}}
 		>

@@ -1,22 +1,25 @@
-import "./globals.css";
-import type { Metadata } from "next";
-import { cn } from "@/lib/utils";
+import CTA from "@/components/sections/CTA";
+import FAQ from "@/components/sections/FAQ";
+import Instagram from "@/components/sections/Instagram";
+import Intro from "@/components/sections/Intro";
+import Landing from "@/components/sections/Landing";
+import PhCourses from "@/components/sections/PhCourses";
+import Work from "@/components/sections/Work";
 
-export const metadata: Metadata = {
-	title:
-		"The Chic Brands Co. | Branding & Design agency for Hospitality and Consumer brands",
-	description:
-		"We help brands create their unique brand identity in this digital world, build trust and increase conversions.",
-};
-
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+export default function Home() {
 	return (
-		<html lang='en'>
-			<body className={cn("m-auto max-w-[1760px] bg-dull-white")}></body>
-		</html>
+		<main className='relative overflow-clip'>
+			<div
+				id='landing'
+				className='absolute left-0 -top-[200px]'
+			/>
+			<Landing />
+			<Intro />
+			<Work />
+			<CTA />
+			<PhCourses />
+			<Instagram />
+			<FAQ />
+		</main>
 	);
 }
