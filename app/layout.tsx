@@ -19,12 +19,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className='bg-white '>
-				<LenisFile>
-					<Navbar />
-					<div className='relative uw:-top-[57px] xl:-top-[57px] lg:-top-[53px] md:-top-[49px] sm:-top-[49px] -top-[45px]'>
-						{children}
-					</div>
-				</LenisFile>
+				<LenisFile>{children}</LenisFile>
 			</body>
 		</html>
 	);

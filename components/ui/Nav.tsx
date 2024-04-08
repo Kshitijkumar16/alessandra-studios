@@ -13,7 +13,6 @@ const Nav = () => {
 			animate='enter'
 			exit='exit'
 			variants={menuSlide}
-			id='list-rendering-div'
 			className='fixed z-[900] top-0 left-0 w-screen h-screen bg-white'
 		>
 			{/* Mobile Menu */}

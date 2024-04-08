@@ -24,7 +24,7 @@ const Navbar = () => {
 				"uw:pt-[36px] xl:pt-[36px] lg:pt-[32px] md:pt-[28px] sm:pt-[28px] pt-[24px] mix-blend-difference"
 			)}
 		>
-			<div className='flex justify-center gap-4 max-md:hidden'>
+			<div className='flex justify-center gap-4'>
 				{routes.map((link, index) => (
 					<Link
 						key={index}
@@ -36,17 +36,6 @@ const Navbar = () => {
 						</p>
 					</Link>
 				))}
-			</div>
-
-			<div className='md:hidden'>
-				<div className='flex justify-center'>
-					<p
-						onClick={onToggle}
-						className='uppercase cursor-pointer text-[14px] tracking-[1px] text-white '
-					>
-						Menu
-					</p>
-				</div>
 			</div>
 		</nav>
 	);

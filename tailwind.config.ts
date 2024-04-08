@@ -19,7 +19,7 @@ const config: Config = {
 			sm: "641px",
 		},
 		extend: {
-			colors: {},
+			colors: { black: "#0e0e0e", white: "#fefefe" },
 		},
 	},
 	variants: {
