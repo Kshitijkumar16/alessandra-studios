@@ -20,20 +20,20 @@ const Landing = () => {
 			<div className={cn("flex justify-center pt-16", sans.className)}>
 				{/* Greeting */}
 				<div className='flex items-center justify-center gap-3 px-4 py-2 rounded-full bg-white/90'>
-					<div className='h-[9px] bg-red-500 rounded-full aspect-square animate-pulse'></div>
+					<div className='h-[10px] bg-red-500 rounded-full aspect-square animate-pulse'></div>
 					<p className='text-black uppercase text-[14px] block font-[600] tracking-[0.5px]'>
 						Welcome to Alessanddra Nirrwaan Photography
 					</p>
 				</div>
 			</div>
 			{/* Images */}
-			<div className='pt-20 overflow-hidden'>
+			<div className='absolute top-1/2 -translate-y-1/2 overflow-hidden'>
 				<LandingImages />
 			</div>
 			{/* Bottom messages */}
 			<div
 				className={cn(
-					"absolute bottom-0 w-full flex justify-between px-24 pb-10",
+					"absolute bottom-0 w-full flex items-end justify-between px-24 pb-20",
 					sans.className
 				)}
 			>
@@ -47,13 +47,13 @@ const Landing = () => {
 					</Link>
 				</p>
 				<div className='flex flex-col items-center'>
-					<p className='block text-center text-white/90 tracking-[0.5px] text-[14px]'>
+					<p className='block text-center text-white/90 tracking-[0.5px] text-[16px]'>
 						Central India's premium photography studio
 					</p>
 					<Link
 						target='_blank'
 						href='https://wa.me/+911231231239'
-						className='text-white/90 text-[14px] tracking-[0.5px] mt-6 border-[2px] gap-2 border-white/90 px-4 py-2 rounded-full flex justify-center items-center'
+						className='text-white/90 text-[14px] tracking-[0.5px] mt-8 border-[2px] gap-2 border-white/90 px-4 py-2 rounded-full flex justify-center items-center'
 					>
 						<div className='aspect-square h-[6px] bg-white/90 rounded-full' />
 						<p className='block'>Book a free discovery session</p>
@@ -61,9 +61,9 @@ const Landing = () => {
 				</div>
 
 				<p className='block text-right text-white/55 tracking-[0.5px] text-[14px]'>
-					Click on any image above
+					Click on any image above and see
 					<br />
-					and see its detailed work.
+					the project in detail.
 				</p>
 			</div>
 

@@ -11,10 +11,12 @@
   "dependencies": {
     "@studio-freight/react-lenis": "^0.0.46",
     "framer-motion": "^11.0.25",
+    "gsap": "^3.12.5",
     "lucide-react": "^0.365.0",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-use-measure": "^2.1.1",
     "tailwind-merge": "^2.2.2",
     "zustand": "^4.5.2"
   },
