@@ -7,12 +7,26 @@ import Link from "next/link";
 import Image from "next/image";
 import Card from "@/components/ui/Card";
 
+interface BottomNumberProps {
+	value: number;
+}
+
+const BottomNumber = ({ value }: BottomNumberProps) => {
+	return (
+		<div className={cn("absolute -bottom-6 left-0", sans.className)}>
+			<p className='text-[14px] text-white/95'>{`[0${value}]`}</p>
+		</div>
+	);
+};
+
 interface ProjectPageProps {
 	params: { id: string };
 }
 
 const ProjectPage = ({ params }: ProjectPageProps) => {
 	const project = landingImages.find((project) => project.id === params.id);
+
+	const imageIndex = String(project?.id);
 
 	const similar = landingImages.filter(
 		(same) => same.shootType === project?.shootType
@@ -24,10 +38,10 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
 			<div className='fixed z-10 top-0 flex w-full justify-center'>
 				<Navbar />
 			</div>
-			<div className='fixed bottom-14 z-10 flex w-full pointer-events-none justify-center'>
+			<div className='fixed bottom-8 z-10 flex w-full pointer-events-none justify-center'>
 				<div
 					className={cn(
-						"bg-white/30 rounded-full aspect-[2/1] h-10 flex justify-center items-center",
+						"bg-white/30 rounded-full aspect-[2/1] h-12 flex justify-center items-center",
 						sans.className
 					)}
 				>
@@ -42,11 +56,89 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
 			{/*  */}
 			<div className='flex justify-between'>
 				{/*  */}
-				<div className='w-[80%]'></div>
+				<div className='w-[78%] pt-32 pb-10 pl-20 flex justify-between'>
+					<div className='w-[60%] flex flex-col'>
+						<div className='relative aspect-[1/1.2] w-[100%]'>
+							<Image
+								src={`/assets/img${imageIndex}-1.png`}
+								alt='photography image'
+								fill
+								className='object-center object-cover'
+							/>
+							<BottomNumber value={1} />
+						</div>
+						<div className='w-[100%] flex justify-end mt-[480px]'>
+							<div className='relative aspect-[1.4/1] w-[80%]'>
+								<Image
+									src={`/assets/img${imageIndex}-4.png`}
+									alt='photography image'
+									fill
+									className='object-center object-cover'
+								/>
+								<BottomNumber value={4} />
+							</div>
+						</div>
+						<div className='w-[100%] relative aspect-[1/1.4] mt-80'>
+							<Image
+								src={`/assets/img${imageIndex}-7.png`}
+								alt='photography image'
+								fill
+								className='object-center object-cover'
+							/>
+							<BottomNumber value={7} />
+						</div>
+					</div>
+					<div className='w-[38%] flex-col flex'>
+						<div className='w-[100%] flex justify-end'>
+							<div className='relative aspect-[1/1.4] w-[75%] '>
+								<Image
+									src={`/assets/img${imageIndex}-2.png`}
+									alt='photography image'
+									fill
+									className='object-center object-cover'
+								/>
+								<BottomNumber value={2} />
+							</div>
+						</div>
+						<div className='w-[100%] flex mt-[300px]'>
+							<div className='relative aspect-[1/1.4] w-[80%]'>
+								<Image
+									src={`/assets/img${imageIndex}-3.png`}
+									alt='photography image'
+									fill
+									className='object-center object-cover'
+								/>
+								<BottomNumber value={3} />
+							</div>
+						</div>
+						<div className='w-[100%] flex mt-96'>
+							<div className='relative aspect-[1/1.5] w-[45%]'>
+								<Image
+									src={`/assets/img${imageIndex}-5.png`}
+									alt='photography image'
+									fill
+									className='object-center object-cover'
+								/>
+								<BottomNumber value={5} />
+							</div>
+						</div>
+						<div className='w-[100%] flex justify-end mt-24'>
+							<div className='relative aspect-[1/1.5] w-[70%]'>
+								<Image
+									src={`/assets/img${imageIndex}-6.png`}
+									alt='photography image'
+									fill
+									className='object-center object-cover'
+								/>
+								<BottomNumber value={6} />
+							</div>
+						</div>
+					</div>
+				</div>
 				{/*  */}
 				<div
 					className={cn(
-						"w-[18%] flex flex-col justify-between pt-[28px] h-screen sticky top-0 pr-10",
+						"w-[16%] flex flex-col justify-between pt-28 h-screen sticky top-0 pr-6",
 						sans.className
 					)}
 				>
@@ -71,7 +163,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
 
 					<div
 						className={cn(
-							"flex justify-start items-start relative z-20 pb-14",
+							"flex justify-start items-start relative z-20 pb-10",
 							sans.className
 						)}
 					>
@@ -82,7 +174,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
 						>
 							<div className='cursor-pointer aspect-square rounded-full bg-red-500 h-3 animate-pulse' />
 							<p className='text-[14px] tracking-[0.5px] text-white/95 cursor-pointer'>
-								Book a free discovery session
+								Book a free session
 							</p>
 						</Link>
 					</div>
@@ -93,7 +185,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
 			<div className={cn("h-screen relative", sans.className)}>
 				<div className='flex justify-center pt-[20dvh]'>
 					<p className='text-[16px] tracking-[0.5px] text-white/95'>
-						(Similar work you must see)
+						(Similar work)
 					</p>
 				</div>
 
