@@ -20,6 +20,14 @@ const config: Config = {
 		},
 		extend: {
 			colors: { black: "#0e0e0e", white: "#fefefe" },
+			keyframes: {
+				pulse: {
+					"0%": { opacity: "100%" },
+					"50%": { opacity: "0%" },
+					"100%": { opacity: "100%" },
+				},
+			},
+			animation: { pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite" },
 		},
 	},
 	variants: {
