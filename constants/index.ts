@@ -381,3 +381,38 @@ export const landingImages = [
 		year: "2023",
 	},
 ];
+
+export const contactLinks = [
+	{
+		title: "(C)",
+		links: [
+			{
+				text: "Nagpur, India.",
+				href: "https://www.google.com/maps/place/Nagpur,+Maharashtra/@21.1420499,78.7721501,11z/data=!3m1!4b1!4m10!1m2!2m1!1snagpur+india+google+maps!3m6!1s0x3bd4c094f9b67089:0x56c06d434ec053c2!8m2!3d21.1362022!4d79.102583!15sChhuYWdwdXIgaW5kaWEgZ29vZ2xlIG1hcHMiA4gBAZIBFGFkbWluaXN0cmF0aXZlX2FyZWE04AEA!16s%2Fg%2F11h1p8z4m8?entry=ttu",
+			},
+			{ text: "test@example.com", href: "mailto:test@example.com" },
+			{ text: "+91 1231231234", href: "phoneto:+11231231234" },
+		],
+	},
+	{
+		title: "(S)",
+		links: [
+			{
+				text: "Instagram",
+				href: "https://instagram.com/",
+			},
+			{ text: "YouTube", href: "https://youtube.com" },
+		],
+	},
+	{
+		title: "(N)",
+		links: [
+			{
+				text: "Work",
+				href: "/",
+			},
+			{ text: "About", href: "/about" },
+			{ text: "Contact", href: "/contact" },
+		],
+	},
+];
