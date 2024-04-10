@@ -62,11 +62,14 @@ const Contact = () => {
 							className='flex flex-col justify-between w-full'
 						>
 							<div className={cn("", serif.className)}>
-								<p className='text-white/80 font-semibold text-[24px]'>{title.title}</p>
+								<p className='text-white/80 font-semibold text-[24px]'>
+									{title.title}
+								</p>
 							</div>
 							<div className={cn("mt-10 flex flex-col gap-1", sans.className)}>
-								{title.links.map((link) => (
+								{title.links.map((link, index) => (
 									<Link
+										key={index}
 										href={link.href}
 										target='_blank'
 										className='block text-white/80 font-semibold text-[16px] tracking-[1px]'

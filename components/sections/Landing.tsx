@@ -1,7 +1,5 @@
-import { landingImages } from "@/constants";
 import { sans, serif } from "@/lib/fonts-provider";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import Link from "next/link";
 import LandingImages from "../ui/LandingImages";
 
@@ -27,7 +25,7 @@ const Landing = () => {
 				</div>
 			</div>
 			{/* Images */}
-			<div className='absolute top-1/2 -translate-y-1/2 overflow-hidden'>
+			<div className='absolute overflow-hidden -translate-y-1/2 top-1/2'>
 				<LandingImages />
 			</div>
 			{/* Bottom messages */}
