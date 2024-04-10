@@ -3,6 +3,7 @@ import Contact from "@/components/sections/Contact";
 import FAQ from "@/components/sections/FAQ";
 import Instagram from "@/components/sections/Instagram";
 import Intro from "@/components/sections/Intro";
+import Message from "@/components/sections/Message";
 import Navbar from "@/components/sections/Navbar";
 import PhCourses from "@/components/sections/PhCourses";
 import React from "react";
@@ -15,6 +16,7 @@ const page = () => {
 				<Navbar />
 			</div>
 			<Intro />
+			<Message />
 			<CTA />
 			<PhCourses />
 			<Instagram />
