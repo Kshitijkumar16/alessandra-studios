@@ -104,7 +104,10 @@ const Work = () => {
 						shootType='Couple Photoshoot'
 					/>
 				</motion.div>
-				<motion.div>
+				<motion.div
+					style={{ y: lg }}
+					className='relative top-[800px]'
+				>
 					<Picture
 						navTo='/5'
 						imgUrl='/assets/img10.png'
