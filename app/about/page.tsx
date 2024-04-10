@@ -6,6 +6,7 @@ import Intro from "@/components/sections/Intro";
 import Message from "@/components/sections/Message";
 import Navbar from "@/components/sections/Navbar";
 import PhCourses from "@/components/sections/PhCourses";
+import Work from "@/components/sections/Work";
 import React from "react";
 
 const page = () => {
@@ -17,6 +18,7 @@ const page = () => {
 			</div>
 			<Intro />
 			<Message />
+			<Work/>
 			<CTA />
 			<PhCourses />
 			<Instagram />
