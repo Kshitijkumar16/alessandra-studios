@@ -16,19 +16,37 @@ interface PictureProps {
 const Picture = ({ imgUrl, alt, shootType, navTo }: PictureProps) => {
 	return (
 		<Link href={navTo}>
-			<div className='flex flex-col items-center px-4 pt-4 pb-2 transition-all duration-300 ease-out rounded-sm grayscale hover:grayscale-0 bg-white/95 hover:-translate-y-4'>
+			<div className='flex flex-col items-center px-4 pt-4 pb-2 transition-all duration-300 ease-out rounded-sm group grayscale hover:grayscale-0 bg-white/95 hover:-translate-y-4'>
 				{/* Picture 1 */}
 				<div className='relative aspect-[1/1.4] h-[400px] '>
 					<Image
 						src={imgUrl}
 						alt={alt}
 						fill
-						className='object-cover object-center'
+						className='object-cover object-center rounded-sm'
 					/>
 				</div>
-				<div className={cn("mt-2", sans.className)}>
-					<p className='text-[18px] text-black font-[600] tracking-[0.25px]'>
+				<div
+					className={cn(
+						"mt-2 w-full relative overflow-hidden h-5",
+						sans.className
+					)}
+				>
+					<p
+						className={cn(
+							"absolute left-1/2 whitespace-nowrap -translate-x-1/2 top-0 group-hover:-top-6 text-[18px] h-4 flex justify-center items-center text-black font-[600] tracking-[0.25px]",
+							"transition-all duration-300 ease-out"
+						)}
+					>
 						{shootType}
+					</p>
+					<p
+						className={cn(
+							"text-[18px] absolute left-1/2 -translate-x-1/2 text-black font-[600] h-4 flex justify-center items-center tracking-[0.25px] group-hover:top-0 top-6",
+							"transition-all duration-300 ease-out"
+						)}
+					>
+						Check it out!
 					</p>
 				</div>
 			</div>

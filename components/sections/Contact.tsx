@@ -6,6 +6,8 @@ import Link from "next/link";
 import React from "react";
 
 const Contact = () => {
+	const before = `before:absolute before:content-[" "] before:-left-0 before:-bottom-[0.5px] before:block before:w-[100%] before:h-[0.5px] before:bg-white/90 before:duration-1000 before:transition-all before:cubic-bezier(0.19, 1, 0.22, 1) before:scale-x-0 before:origin-left hover:before:scale-x-100 hover:before:delay-300`;
+
 	return (
 		<div className='relative flex flex-col justify-between h-screen pt-16 bg-black pb-14'>
 			<div className={cn("flex justify-between mx-14", serif.className)}>
@@ -28,7 +30,7 @@ const Contact = () => {
 						target='_blank'
 						className='flex justify-end gap-1 mt-40'
 					>
-						<p className='block text-[16px] font-bold uppercase text-white/90'>
+						<p className={cn("block text-[16px] relative font-bold uppercase text-white/90", before)}>
 							by the chic brands co
 						</p>
 						<ArrowUpRight className='text-white/90' />
@@ -47,7 +49,7 @@ const Contact = () => {
 						target='_blank'
 						className='flex gap-1 mt-2'
 					>
-						<p className='block text-[16px] font-bold uppercase text-white/90'>
+						<p className={cn("block text-[16px] relative font-bold uppercase text-white/90", before)}>
 							emotion
 						</p>
 						<ArrowUpRight className='text-white/90' />
@@ -62,7 +64,7 @@ const Contact = () => {
 							className='flex flex-col justify-between w-full'
 						>
 							<div className={cn("", serif.className)}>
-								<p className='text-white/80 font-semibold text-[24px]'>
+								<p className='text-white/90 font-semibold text-[24px]'>
 									{title.title}
 								</p>
 							</div>
@@ -72,7 +74,10 @@ const Contact = () => {
 										key={index}
 										href={link.href}
 										target='_blank'
-										className='block text-white/80 font-semibold text-[16px] tracking-[1px]'
+										className={cn(
+											"flex relative text-white/90 text-[16px] tracking-[1px]",
+											before
+										)}
 									>
 										{link.text}
 									</Link>

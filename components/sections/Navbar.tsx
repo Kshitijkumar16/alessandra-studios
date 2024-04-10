@@ -17,6 +17,8 @@ const Navbar = () => {
 		active: pathname === `${link.url}`,
 	}));
 
+	const before = `before:absolute before:content-[" "] before:-left-0 before:-bottom-[0.5px] before:block before:w-[100%] before:h-[0.5px] before:bg-white/90 before:duration-1000 before:transition-all before:cubic-bezier(0.19, 1, 0.22, 1) before:scale-x-0 before:origin-left hover:before:scale-x-100 hover:before:delay-300`;
+
 	return (
 		<nav
 			className={cn(
@@ -31,7 +33,12 @@ const Navbar = () => {
 						href={link.url}
 						className={cn("relative", sans.className)}
 					>
-						<p className='uppercase text-[14px] tracking-[1px] text-white '>
+						<p
+							className={cn(
+								"uppercase text-[14px] tracking-[1px] text-white relative",
+								before
+							)}
+						>
 							{link.active ? `(${link.title})` : link.title}
 						</p>
 					</Link>

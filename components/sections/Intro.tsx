@@ -100,7 +100,7 @@ const Intro = () => {
 			<div className='absolute inset-0 z-0 flex items-center justify-center w-full h-full overflow-hidden pointer-events-none'>
 				<motion.div
 					style={{ y: sl }}
-					className='h-[110%] w-[110%] -top-32 flex justify-center items-center relative aspect-[16/9]'
+					className='h-[110%] w-[110%] -top-24 flex justify-center items-center relative aspect-[16/9]'
 				>
 					<Image
 						src='/assets/about.png'
