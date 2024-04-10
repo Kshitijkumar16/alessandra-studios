@@ -88,6 +88,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
 							<BottomNumber value={7} />
 						</div>
 					</div>
+					{/* sub right */}
 					<div className='w-[38%] flex-col flex'>
 						<div className='w-[100%] flex justify-end'>
 							<div className='relative aspect-[1/1.4] w-[75%] '>
@@ -180,6 +181,8 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
 					</div>
 				</div>
 			</div>
+
+			<div className=''></div>
 
 			{/* Similar photos */}
 			<div className={cn("h-screen relative", sans.className)}>
