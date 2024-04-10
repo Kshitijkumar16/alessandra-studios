@@ -382,6 +382,42 @@ export const landingImages = [
 	},
 ];
 
+export const FAQs = [
+	{
+		question: "How do I book my portfolio shoot?",
+		answer: [
+			"You need to message/call on Whatsapp +917620753043 and book an appointment. We suggest you to come for a meeting to understand the portfolio package in detail and book your shoot with us.",
+		],
+	},
+	{
+		question:
+			"Can I come to shoot directly to your studio without an appointment?",
+		answer: ["NO. All sessions are by appointment only."],
+	},
+	{ question: "Do you shoot indoors and outdoors?", answer: ["Yes"] },
+	{
+		question: "How many days in advance do I need to book my shoot?",
+		answer: ["It is best to book 7-10 days in advance."],
+	},
+	{
+		question: "What clothing should I bring for photoshoot?",
+		answer: [
+			"Its good to show and select the clothes for shoot well in advance to avoid the last minute hitch",
+		],
+	},
+	{
+		question:
+			"Is professional make-up artist and hair stylist available during shoot?",
+		answer: ["YES, you have to pay extra for it."],
+	},
+	{
+		question: "Are all pictures retouched?",
+		answer: [
+			"YES, all the selected pictures/photos are digitally retouched as per selected package.",
+		],
+	},
+];
+
 export const contactLinks = [
 	{
 		title: "(C)",
