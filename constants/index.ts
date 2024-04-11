@@ -382,6 +382,13 @@ export const landingImages = [
 	},
 ];
 
+export const InstaFeed = [
+	{ imgIndex: 1, alt: "test", postUrl: "" },
+	{ imgIndex: 6, alt: "test", postUrl: "" },
+	{ imgIndex: 7, alt: "test", postUrl: "" },
+	{ imgIndex: 11, alt: "test", postUrl: "" },
+];
+
 export const FAQs = [
 	{
 		question: "How do I book my portfolio shoot?",
