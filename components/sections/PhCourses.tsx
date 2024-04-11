@@ -77,7 +77,7 @@ const Card = ({ active, title, subtitle, points }: CardProps) => {
 
 const PhCourses = () => {
 	return (
-		<div className='mx-14 py-60'>
+		<div id="courses" className='mx-14 py-60'>
 			<div
 				className={cn(
 					"flex flex-col justify-center items-center",

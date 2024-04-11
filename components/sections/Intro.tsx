@@ -14,7 +14,7 @@ const Intro = () => {
 		offset: ["start end", "end start"],
 	});
 
-	const sl = useTransform(scrollYProgress, [0, 1], [0, 500]);
+	const sl = useTransform(scrollYProgress, [0, 1], [0, 1500]);
 
 	return (
 		<div className='relative h-screen'>
@@ -32,7 +32,7 @@ const Intro = () => {
 				{/* bottom div */}
 				<div className={cn("items-end flex justify-between ")}>
 					<div className={cn("z-10 flex gap-3 items-center", sans.className)}>
-						<div className='z-10 h-3 bg-red-500 rounded-full animate-pulse aspect-square' />
+						<div className='z-10 h-3 bg-red-600 rounded-full animate-pulse aspect-square' />
 						<p className='uppercase z-10 text-[16px] text-white/50 font-bold tracking-[0.5px]'>
 							rec
 						</p>

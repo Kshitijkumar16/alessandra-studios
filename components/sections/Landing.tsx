@@ -18,8 +18,8 @@ const Landing = () => {
 			<div className={cn("flex justify-center pt-16", sans.className)}>
 				{/* Greeting */}
 				<div className='flex items-center justify-center gap-3 px-4 py-2 rounded-full bg-white/90'>
-					<div className='h-[10px] bg-red-500 rounded-full aspect-square animate-pulse'></div>
-					<p className='text-black uppercase text-[14px] block font-[600] tracking-[0.5px]'>
+					<div className='h-3 bg-red-600 rounded-full aspect-square animate-pulse'></div>
+					<p className='text-black uppercase text-[16px] block font-[600] tracking-[0.5px]'>
 						Welcome to Alessanddra Nirrwaan Photography
 					</p>
 				</div>
@@ -38,7 +38,7 @@ const Landing = () => {
 				<p className='block text-left text-white/55 tracking-[0.5px] text-[14px]'>
 					Looking for a photography course? <br />
 					<Link
-						href='/about'
+						href='/about/#courses'
 						className='underline decoration-[0.5px] decoration-white/55 underline-offset-[2px]'
 					>
 						We got you!

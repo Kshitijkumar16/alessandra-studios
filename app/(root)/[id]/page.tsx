@@ -268,7 +268,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
 							href='https://wa.me/+911231231239'
 							className='flex border-[2px] border-white/80  rounded-full justify-center items-center px-4 z-20 py-3 gap-2'
 						>
-							<div className='h-3 bg-red-500 rounded-full cursor-pointer aspect-square animate-pulse' />
+							<div className='h-3 bg-red-600 rounded-full cursor-pointer aspect-square animate-pulse' />
 							<p className='text-[14px] tracking-[0.5px] text-white/95 cursor-pointer'>
 								Book a free session
 							</p>
