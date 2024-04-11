@@ -170,6 +170,9 @@ export const landingImages = [
 		location: "Nagpur",
 		camera: "Canon EOS 60D",
 		year: "2023",
+		testimonial:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus omnis deleniti!",
+		clientName: "client",
 	},
 	{
 		id: "2",
@@ -189,6 +192,9 @@ export const landingImages = [
 		location: "Nagpur",
 		camera: "Canon EOS 60D",
 		year: "2023",
+		testimonial:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus omnis deleniti!",
+		clientName: "client",
 	},
 	{
 		id: "3",
@@ -208,6 +214,9 @@ export const landingImages = [
 		location: "Nagpur",
 		camera: "Canon EOS 60D",
 		year: "2023",
+		testimonial:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus omnis deleniti!",
+		clientName: "client",
 	},
 	{
 		id: "4",
@@ -227,6 +236,9 @@ export const landingImages = [
 		location: "Nagpur",
 		camera: "Canon EOS 60D",
 		year: "2023",
+		testimonial:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus omnis deleniti!",
+		clientName: "client",
 	},
 	{
 		id: "5",
@@ -246,6 +258,9 @@ export const landingImages = [
 		location: "Nagpur",
 		camera: "Canon EOS 60D",
 		year: "2023",
+		testimonial:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus omnis deleniti!",
+		clientName: "client",
 	},
 	{
 		id: "6",
@@ -265,6 +280,9 @@ export const landingImages = [
 		location: "Nagpur",
 		camera: "Canon EOS 60D",
 		year: "2023",
+		testimonial:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus omnis deleniti!",
+		clientName: "client",
 	},
 	{
 		id: "7",
@@ -284,6 +302,9 @@ export const landingImages = [
 		location: "Nagpur",
 		camera: "Canon EOS 60D",
 		year: "2023",
+		testimonial:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus omnis deleniti!",
+		clientName: "client",
 	},
 	{
 		id: "8",
@@ -303,6 +324,9 @@ export const landingImages = [
 		location: "Nagpur",
 		camera: "Canon EOS 60D",
 		year: "2023",
+		testimonial:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus omnis deleniti!",
+		clientName: "client",
 	},
 	{
 		id: "9",
@@ -322,6 +346,9 @@ export const landingImages = [
 		location: "Nagpur",
 		camera: "Canon EOS 60D",
 		year: "2023",
+		testimonial:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus omnis deleniti!",
+		clientName: "client",
 	},
 	{
 		id: "10",
@@ -341,6 +368,9 @@ export const landingImages = [
 		location: "Nagpur",
 		camera: "Canon EOS 60D",
 		year: "2023",
+		testimonial:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus omnis deleniti!",
+		clientName: "client",
 	},
 	{
 		id: "11",
@@ -360,6 +390,9 @@ export const landingImages = [
 		location: "Nagpur",
 		camera: "Canon EOS 60D",
 		year: "2023",
+		testimonial:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus omnis deleniti!",
+		clientName: "client",
 	},
 	{
 		id: "12",
@@ -379,6 +412,9 @@ export const landingImages = [
 		location: "Nagpur",
 		camera: "Canon EOS 60D",
 		year: "2023",
+		testimonial:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum ducimus omnis deleniti!",
+		clientName: "client",
 	},
 ];
 

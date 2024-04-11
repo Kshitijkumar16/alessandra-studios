@@ -248,6 +248,15 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
 						<p className='text-[14px] capitalize tracking-[0.5px]'>{`year: ${project?.year}`}</p>
 					</div>
 
+					{/*  */}
+					<div>
+						<p className='text-[14px] capitalize tracking-[0.5px] '>{`"${project?.testimonial}"`}</p>
+						<p className='text-[14px] mt-4 capitalize tracking-[0.5px] '>
+							{`- ${project?.clientName}`}
+						</p>
+					</div>
+
+					{/*  */}
 					<div
 						className={cn(
 							"flex justify-start items-start relative z-20 pb-10",
